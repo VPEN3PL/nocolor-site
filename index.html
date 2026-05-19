@@ -1,132 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NOCOLOR</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NOCOLOR Worldwide</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-  margin: 0;
   background: #000;
   color: #fff;
   font-family: 'DM Sans', sans-serif;
-  text-align: center;
+  overflow-x: hidden;
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.75)), url("images/campaign-hero.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 20px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-h1 {
+.hero h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 90px;
+  font-size: clamp(70px, 15vw, 180px);
+  line-height: .85;
   letter-spacing: 3px;
-  margin: 0;
 }
 
 .tagline {
-  font-size: 14px;
-  letter-spacing: 4px;
-  margin-top: 20px;
-  opacity: 0.7;
+  margin-top: 24px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  opacity: .8;
+  text-transform: uppercase;
 }
 
-.button {
-  margin-top: 40px;
-}
+.button { margin-top: 42px; }
 
 .button a {
-  border: 1px solid #fff;
-  padding: 12px 30px;
-  text-decoration: none;
   color: #fff;
-  letter-spacing: 3px;
-  font-size: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.7);
+  padding: 14px 34px;
+  font-size: 11px;
+  letter-spacing: 4px;
 }
 
-.section {
-  padding: 100px 20px;
+section {
+  padding: 110px 24px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.1);
 }
 
-.section h2 {
+h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: clamp(44px, 8vw, 96px);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
 }
 
-.section p {
-  max-width: 500px;
-  margin: auto;
-  opacity: 0.7;
+p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: .68;
 }
 
-.back-graphic {
-  margin-top: 60px;
-  font-size: 100px;
-  opacity: 0.1;
+.image-block {
+  margin: 60px auto 0;
+  max-width: 1100px;
+}
+
+.image-block img {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.logo-block {
+  margin: 60px auto 0;
+  max-width: 520px;
+  width: 90%;
+}
+
+.logo-block img {
+  width: 100%;
+  display: block;
+}
+
+.drop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  max-width: 900px;
+  margin: 60px auto 0;
+}
+
+.drop-card {
+  border: 1px solid rgba(255,255,255,.14);
+  padding: 34px 26px;
+  text-align: left;
+}
+
+.drop-card span {
+  font-size: 10px;
+  letter-spacing: 4px;
+  opacity: .45;
+  text-transform: uppercase;
+}
+
+.drop-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 34px;
+  margin: 16px 0;
+}
+
+.drop-card p {
+  text-align: left;
+  font-size: 14px;
+  margin: 0;
 }
 
 footer {
-  padding: 40px;
-  font-size: 12px;
-  opacity: 0.5;
+  padding: 44px 20px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 4px;
+  opacity: .45;
+  border-top: 1px solid rgba(255,255,255,.1);
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>NOCOLOR</h1>
-  <div class="tagline">NO LABELS. JUST HUMAN.</div>
+<main class="hero">
+  <div>
+    <h1>NO LABELS.<br>JUST HUMAN.</h1>
+    <div class="tagline">NOCOLOR WORLDWIDE</div>
+    <div class="tagline">Different Roots. One Movement.</div>
 
-  <div class="button">
-    <a href="https://instagram.com/nocolorworldwide">INSTAGRAM</a>
+    <div class="button">
+      <a href="https://instagram.com/nocolorworldwide" target="_blank">INSTAGRAM</a>
+    </div>
   </div>
-</div>
+</main>
 
-<!-- MISSION -->
-<div class="section">
-  <h2>THE MOVEMENT</h2>
+<section>
+  <h2>THE SYMBOL</h2>
   <p>
-    Different roots. One movement.  
-    We celebrate identity without labels.  
-    Built for people who move, create, and exist beyond categories.
+    A barcode crossed out. A rejection of labels.
+    NOCOLOR exists for people who refuse to be reduced to categories.
   </p>
-</div>
 
-<!-- DROP -->
-<div class="section">
+  <div class="logo-block">
+    <img src="images/logo.png" alt="NOCOLOR logo">
+  </div>
+</section>
+
+<section>
   <h2>DROP 001</h2>
   <p>
-    Minimal form. Maximum meaning.  
-    The first piece introduces the symbol —  
-    a rejection of labels.
+    Built for those who don’t fit categories.
+    Minimal on the front. Statement on the back.
+    No labels. Just human.
   </p>
 
-  <div class="back-graphic">✕</div>
-</div>
+  <div class="image-block">
+    <img src="images/product-mockup.png" alt="NOCOLOR Drop 001 shirt mockups">
+  </div>
 
-<!-- CLOSING -->
-<div class="section">
+  <div class="drop-grid">
+    <div class="drop-card">
+      <span>Front</span>
+      <h3>NOCOLOR</h3>
+      <p>Small chest wordmark. Clean, wearable, quiet confidence.</p>
+    </div>
+
+    <div class="drop-card">
+      <span>Back</span>
+      <h3>FLAG BLINDFOLD</h3>
+      <p>The hero graphic. A visual rejection of labels and division.</p>
+    </div>
+
+    <div class="drop-card">
+      <span>Colors</span>
+      <h3>BLACK / OLIVE</h3>
+      <p>Grounded, minimal, streetwear-ready.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>THE CAMPAIGN</h2>
+  <p>
+    Equality through presence. Different faces, different roots,
+    one shared statement.
+  </p>
+
+  <div class="image-block">
+    <img src="images/lifestyle-lineup.png" alt="NOCOLOR lifestyle campaign">
+  </div>
+</section>
+
+<section>
   <h2>WORLDWIDE</h2>
   <p>
-    This is not a brand.  
-    This is a perspective.
+    This is not about erasing differences.
+    This is about refusing division.
   </p>
-</div>
+</section>
 
-<!-- FOOTER -->
 <footer>
-  NOCOLOR — 2026
+  NOCOLOR — EST. 2026
 </footer>
 
 </body>
